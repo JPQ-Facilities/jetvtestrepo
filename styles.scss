@@ -1,0 +1,135 @@
+@font-face {
+    font-family:"DIN-Neuzeit-Grotesk-LT-W01";
+    src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b41558bd-2862-46c0-abf7-536d2542fa26.eot?#iefix");
+    src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b41558bd-2862-46c0-abf7-536d2542fa26.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/5cee8d6e-89ad-4d8c-a0ac-584d316b15ae.woff2") format("woff2"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/388ef902-2c31-4818-abb1-a40dcd81f6d6.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/29c60077-2614-4061-aa8d-5bcfdf7354bb.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/76250d27-b353-4f3b-90c6-0ff635fabaab.svg#76250d27-b353-4f3b-90c6-0ff635fabaab") format("svg");
+	font-display: block;
+}
+
+@font-face {
+	font-family: "DIN-Next-W01-Light";
+	src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix");
+	src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix") format("eot"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/bc176270-17fa-4c78-a343-9fe52824e501.woff") format("woff"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3516f91d-ac48-42cd-acfe-1be691152cc4.ttf") format("truetype"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d1b1e866-a411-42ba-8f75-72bf28e23694.svg#d1b1e866-a411-42ba-8f75-72bf28e23694") format("svg");
+	font-display: block;
+}
+
+:root {
+	--vp: 0; // Vertical Padding
+	--hp: 18vw; // Horizontal Padding
+	--ch: 72px; // Content Height 72px
+}
+.topnav {
+	width: calc(100vw - var(--hp) * 2); // 100% - Padding * 2
+	padding: var(--vp) var(--hp); // Sets the inset for elements
+	background-image: linear-gradient(to bottom,  rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0)); // Top dropshadow
+	.topnavcontain {
+		display: flex; // Nice formatting
+		align-items: stretch; // Forces all elements to be the same height
+		justify-content: space-between; // Evenly spaces elements
+		// JETV Logo
+		.logo {
+			padding: 18px 0 24px 0; // Top 18px Right 0 Bottom 24px Left 0
+			height: 0; // Removes weird spacing
+			img {
+				width: 30px; // Widht 30px
+				height: 30px; // Height 30px
+			}
+		}
+		// HOME  VIDEO  ABOUT US  CONTACT
+		.toptext {
+			flex-grow: 1; // Forces the div to the left
+			display: flex; // Nice formatting
+			list-style: none; // Removes bulletpoints
+			padding: 0; // Removes weird list padding
+			margin: 0; // Removes weird list margins
+			margin-left: 50px;
+			line-height: var(--ch); // Vertically centers text
+			li {
+				font-family: "DIN-Next-W01-Light"; // Set font
+				font-size: 14px; // Font size 14px
+				margin: 0 15px; // Vert margin 0, Horiz margin 15px
+				color: #FFFFFF; // change color white
+				cursor: pointer; // Change cursor to pointer on hover
+				transition: color .4s; // Color Transition, Speed .4s, No Ease
+				&:first-child { // Only the first text
+					color: #FF3333; // Change color
+				}
+				&:hover { // On hover
+					color: #CCCCCC; // Change color
+				}
+			}
+		}
+		// INSTAGRAM  TWITTER  YOUTUBE
+		.socials {
+			padding: 23px 0 25px 0; // Top 23px Right 0 Bottom 25px Left 0
+			// HYPERLINKS
+			a {
+				text-decoration: none; // Removes blue highlight
+				// IMAGES
+				img {
+					width: 20px; // Width 20px
+					height: 20px; // Height 20px
+				}
+				&:not(:nth-of-type(3)) { // Does all but Youtube Logo
+					margin-right: 20px; // Offset Between Socials
+				}
+			}
+		}
+	}
+}
+
+// Main Content
+.content {
+	// JAGGED EDGE
+	h1 {
+		color: #FFFFFF; // Change color
+		text-shadow: #000 -1px -1px, #000 -1px 1px, #000 1px 1px, #000 1px -1px; // 1px Black Border
+		margin: 116px 0 10px calc(var(--hp) - 30px); // Top 116 + TopNav Height, Right 0, Bottom 10px, Left 25% - JETV Logo
+		inline-size: min-content; // Wraps Text
+		font: 78px/1.1em "DIN-Neuzeit-Grotesk-LT-W01", sans-serif; // Font Size 78px, Font Spacing 1.1em
+	}
+	// [ STUDENT VIDEO ]
+	h2 {
+		--c: rgba(0, 0, 0, 0.5); // Dropshadow color
+		color: #FF3030; // Change color
+		text-shadow: var(--c) -1px -1px, var(--c) -1px 1px, var(--c) 1px 1px, var(--c) 1px -1px; // 1px Black Border
+		margin: 10px 0 10px calc(var(--hp) - 30px); // Top 116 + TopNav Height, Right 0, Bottom 10px, Left 25% - JETV Logo
+		font: 22px "DIN-Neuzeit-Grotesk-LT-W01", sans-serif; // Font Size 78px, Font Spacing 1.1em
+		letter-spacing: 0.05em; // Letter Spacing 0.05em
+	}
+	// IMAGES
+	.images {
+		display: grid; // Grid Display
+		grid-template-columns: repeat(3,auto); // 3xInfinite Grid
+		gap: 10px; // 10px Gap
+		place-content: center; // Centers Images
+		position: relative; // Wraps to Text
+		margin-top: 220px;
+		margin-bottom: 100px;
+		a {
+			text-decoration: none;
+			overflow: hidden;
+			// IMAGES
+			img {
+				width: calc(((100vw - 2*var(--hp)) + 40px) / 3); // 50vw (Screen Middle) + 40px (Offset to lineup with h2) /3 (3 items)
+				aspect-ratio: 16/9;	// Only Rectangles
+				--sc: 1; // Scale(1)
+				transform: scale(var(--sc)); // Scale(--sc)
+				transition: 1.5s; // Smooth Transition
+				&:hover {
+					--sc: 1.1; // Scale(1.1)
+					filter: brightness(.7); // Darkens Image
+				}
+			}
+		}
+	}
+}
+
+body {
+	display: block;
+	margin: 0;
+	background-image: url("https://raw.githubusercontent.com/Quinnterruption/JaggedEdge/main/Images/BackGround.jpg");
+	background-size: cover; // Increases background size to fill
+	background-repeat: no-repeat; // Background doesn't repeat image
+	background-attachment: fixed;
+	overflow: auto-enabled;
+}
