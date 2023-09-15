@@ -1,0 +1,105 @@
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+:root {
+  --vp: 0;
+  --hp: 10%;
+  --ch: 42px; }
+
+body {
+  animation-name: fade-in;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards; }
+
+.topnav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - var(--hp) * 2);
+  padding: var(--vp) var(--hp);
+  background-color: #AF0000; }
+  .topnav .topnavcontain {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between; }
+    .topnav .topnavcontain .logo {
+      padding: 7px 0 0 0;
+      height: 0; }
+      .topnav .topnavcontain .logo img {
+        height: 28px; }
+    .topnav .topnavcontain .toptext {
+      flex-grow: 1;
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-left: 15px;
+      line-height: var(--ch); }
+      .topnav .topnavcontain .toptext li {
+        font-family: 'Inter', sans-serif;
+        font-weight: 550;
+        font-size: 12px;
+        margin: 0 15px;
+        color: #FFFFFF;
+        cursor: pointer;
+        transition: color .4s; }
+        .topnav .topnavcontain .toptext li a {
+          text-decoration: none;
+          color: #FFFFFF; }
+        .topnav .topnavcontain .toptext li:nth-of-type(1) {
+          color: #AF0000;
+          box-shadow: -15px 0 #FFFFFF, inset 6em 0 #FFFFFF, 15px 0 #FFFFFF; }
+    .topnav .topnavcontain .socials img {
+      padding: 13px 0 0 13px;
+      width: 16px;
+      height: 16px; }
+
+.content {
+  display: inline-block;
+  position: relative;
+  top: 42px;
+  width: calc(100% - var(--hp) * 2);
+  padding: var(--vp) var(--hp); }
+  .content h1 {
+    margin: 42px 0 0 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 550;
+    font-size: 46px; }
+  .content h2 {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 550;
+    font-size: 24px;
+    color: #AF0000; }
+  .content .images {
+    padding: 20px 0 0 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-areas: "Main-Image img img" "Main-Image img img";
+    gap: 16px; }
+    .content .images img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
+      .content .images img:nth-of-type(1) {
+        grid-area: Main-Image; }
+  .content .button {
+    display: block;
+    width: 8.1em;
+    line-height: 50px;
+    margin: 57px auto 100px auto; }
+    .content .button a {
+      text-decoration: none;
+      color: #FFFFFF; }
+      .content .button a h3 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 550;
+        font-size: 12px;
+        width: 10em;
+        margin: 57px auto 100px auto;
+        text-align: center;
+        box-shadow: -5px 0 #AF0000, inset 10em 0 #AF0000, 5px 0 #AF0000; }
