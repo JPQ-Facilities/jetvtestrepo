@@ -1,32 +1,36 @@
 <!doctype html>
 <html>
 	<head>
-	<meta charset="UTF-8">
-	<title>Contacts</title>
-	<link rel="stylesheet" href="Contacts.css">
-	<link rel="icon" type="image/x-icon" href="Images/logo w bg.png">
+		<meta charset="UTF-8">
+		<title>Contacts</title>
+		<link rel="stylesheet" href="Contacts.css">
+		<script src="nav.js"></script>
 	</head>
-	<body>
-		<header class="topnav">
-			<div class="topnavcontain">
-				<div class="logo">
-					<img src="Images/jetv.svg" alt="jetv"/>
+	<body onload="navBackAnimate(4)">
+		<!--Navigation bar-->
+		<link rel="stylesheet" href="nav.css">
+			<header id="topnav">
+				<script src="nav.js"></script>
+				<div id="topnavcontain">
+					<div id="logo">
+						<img src="Images/jetv.svg" alt="jetv"/>
+					</div>
+					<ul id="toptext">
+						<li onclick="navAnimate(1).then(() =&gt; location.href='')">HOME</li>
+						<li onclick="navAnimate(2).then(() =&gt; location.href='Videos.html')">VIDEOS</li>
+						<li onclick="navAnimate(3).then(() =&gt; location.href='About.html')">ABOUT</li>
+						<li class="active" onclick="navAnimate(4).then(() =&gt; location.href='Contacts.html')">CONTACT</li>
+					</ul>
+					<div id="socials">
+						<a href="twitter.com/jaggededgevideo">
+							<img src="Images/twitter.svg" alt="twitter"/></a>
+						<a href="instagram.com/jaggededgetv">
+							<img src="Images/instagram.svg" alt="insta"/></a>
+						<a href="youtube.com/channel/UCq7PExzi6fOEK0DMr7quo0w">
+							<img src="Images/youtube.svg" alt="youtube"/></a>
+					</div>
 				</div>
-				<ul class="toptext">
-					<li onclick="location.href='/';"/>HOME
-					<li onclick="location.href='Videos.html';"/>VIDEOS
-					<li onclick="location.href='About.html';"/>ABOUT
-					<li onclick="location.href='Contacts.html';"/>CONTACT
-				</ul>
-				<div class="socials">
-					<a href="twitter.com">
-						<img src="Images/twitter.svg" alt="twitter"/></a>
-					<a href="instagram.com">
-						<img src="Images/instagram.svg" alt="insta"/></a>
-					<a href="youtube.com">
-						<img src="Images/youtube.svg" alt="youtube"/></a>
-				</div>
-			</div>
-		</header>
+			</header>
+		<!--end of Navigation bar-->
 	</body>
 </html>
