@@ -14,7 +14,7 @@ async function navAnimate(select, dir = 'normal', speed = 100) {
 	changeActive();
 	
 	return new Promise(res => {
-		setTimeout(res, speed + 5);
+		setTimeout(res, speed + 1);
 	})
 }
 
