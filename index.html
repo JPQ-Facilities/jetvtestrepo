@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Home</title>
 		<link rel="stylesheet" href="Home.css">
 		<link rel="icon" type="image/x-icon" href="Images/jetvred.png">
@@ -16,10 +16,10 @@
 						<img src="Images/jetv.svg" alt="jetv"/>
 					</div>
 					<ul id="toptext">
-						<li class="active" onclick="navAnimate(1).then(() =&gt; location.href='/')">HOME</li>
-						<li onclick="navAnimate(2).then(() =&gt; location.href='Videos.html')">VIDEOS</li>
-						<li onclick="navAnimate(3).then(() =&gt; location.href='About.html')">ABOUT</li>
-						<li onclick="navAnimate(4).then(() =&gt; location.href='Contacts.html')">CONTACT</li>
+						<li class="active" onclick="navAnimate(1).then(() => location.href='/')">HOME</li>
+						<li onclick="navAnimate(2).then(() => location.href='Videos.html')">VIDEOS</li>
+						<li onclick="navAnimate(3).then(() => location.href='About.html')">ABOUT</li>
+						<li onclick="navAnimate(4).then(() => location.href='Contacts.html')">CONTACT</li>
 					</ul>
 					<div id="socials">
 						<a href="https://twitter.com/jaggededgevideo">
@@ -32,21 +32,21 @@
 				</div>
 			</header>
 		<!--end of Navigation bar-->
-	  <main class="content">
-		<h1>JAGGED EDGE</h1>
-		<h2>STUDENT VIDEO</h2>
-		<div class="images">
-			<img src="Images/bush.png" alt="bush"/>
-			<img src="Images/maybe.png" alt="people"/>
-			<img src="Images/jiggy.png" alt="jiggy"/>
-			<img src="Images/cheer.png" alt="cheer"/>
-			<img src="Images/women.png" alt="women"/>
-		  </div>
-		<div class="button">
-			<a href="">
-				<h3>WATCH VIDEOS</h3>
-			</a>
-		  </div>
-	  </main>
+	  	<main id="content">
+			<h1>JAGGED EDGE</h1>
+			<h2>STUDENT VIDEO</h2>
+			<div id="images">
+				<img src="Images/bush.png" alt="bush"/>
+				<img src="Images/maybe.png" alt="people"/>
+				<img src="Images/jiggy.png" alt="jiggy"/>
+				<img src="Images/cheer.png" alt="cheer"/>
+				<img src="Images/women.png" alt="women"/>
+		  	</div>
+			<div id="button">
+				<a href="">
+					<span>WATCH VIDEOS</span>
+				</a>
+		  	</div>
+		</main>
 	</body>
 </html>

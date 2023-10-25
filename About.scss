@@ -1,74 +1,20 @@
-@keyframes fade-in {
-	from {
-		opacity: 0;
-	} to {
-		opacity: 1;
-	}
-}
-
 :root {
 	--vp: 0; // Vertical Padding
 	--hp: 10%; // Horizontal Padding
 	--ch: 42px; // Content Height 42px
 }
 
-body {
-	animation-name: fade-in;
-	animation-duration: 0.7s;
-	animation-fill-mode: forwards;
-}
-
-.topnav {
-	z-index: 1;
-	position: fixed;
-	top: 0;
-	left: 0;
+#content {
+  display: inline-block;
+	position: relative;
+	top: var(--ch);
 	width: calc(100% - var(--hp) * 2); // 100% - Padding * 2
 	padding: var(--vp) var(--hp); // Sets the inset for elements
-	background-color: #AF0000;
-	.topnavcontain {
-		display: flex; // Nice formatting
-		align-items: stretch; // Forces all elements to be the same height
-		justify-content: space-between; // Evenly spaces elements
-		// JETV Logo
-		.logo {
-			padding: 7px 0 0 0; // Top 7px Right 0 Bottom 0 Left 0
-			height: 0; // Removes weird spacing
-			img {
-				// width: 30px; // Widht 30px
-				height: 28px; // Height 30px
-			}
-		}
-		// HOME  VIDEO  ABOUT  CONTACT
-		.toptext {
-			flex-grow: 1; // Forces the div to the left
-			display: flex; // Nice formatting
-			list-style: none; // Removes bulletpoints
-			padding: 0; // Removes weird list padding
-			margin: 0; // Removes weird list margins
-			margin-left: 15px;
-			line-height: var(--ch); // Vertically centers text
-			li {
-				font-family: 'Inter', sans-serif; // Set font
-				font-weight: 550;
-				font-size: 12px; // Font size 14px
-				margin: 0 15px; // Vert margin 0, Horiz margin 15px
-				color: #FFFFFF; // change color white
-				cursor: pointer; // Change cursor to pointer on hover
-				transition: color .4s; // Color Transition, Speed .4s, No Ease
-				&:nth-of-type(3) {
-					color: #AF0000;
-					box-shadow: -15px 0 #FFFFFF, inset 6em 0 #FFFFFF, 15px 0 #FFFFFF;
-				}
-			}
-		}
-		.socials {
-			img {
-				padding: 13px 0 0 13px;
-				width: 16px;
-				height: 16px;
-			}
-		}
+  h1 {
+		margin: var(--ch) auto 0 auto;
+    text-align: center;
+		font-family: 'Inter', sans-serif;
+		font-weight: 550;
+		font-size: 46px;
 	}
 }
-

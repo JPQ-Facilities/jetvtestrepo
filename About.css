@@ -1,4 +1,22 @@
 :root {
   --vp: 0;
   --hp: 10%;
-  --ch: 42px; }
+  --ch: 42px;
+}
+
+#content {
+  display: inline-block;
+  position: relative;
+  top: var(--ch);
+  width: calc(100% - var(--hp) * 2);
+  padding: var(--vp) var(--hp);
+}
+#content h1 {
+  margin: var(--ch) auto 0 auto;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 550;
+  font-size: 46px;
+}
+
+/*# sourceMappingURL=About.css.map */
