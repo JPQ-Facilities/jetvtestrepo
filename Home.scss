@@ -8,7 +8,7 @@
 	display: inline-block;
 	position: relative;
 	top: var(--ch);
-	width: calc(100% - var(--hp) * 2); // 100% - Padding * 2
+	// width: calc(100% - var(--hp) * 2); // 100% - Padding * 2
 	padding: var(--vp) var(--hp); // Sets the inset for elements
 	h1 {
 		margin: var(--ch) 0 0 0;
@@ -26,7 +26,7 @@
 	#images {
 		padding: 20px 0 0 0;
 		display: grid;
-		grid-template-rows: 1fr 1fr;
+		// grid-template-rows: 1fr 1fr;
 		grid-template-columns: 3fr 1fr 1fr;
 		grid-template-areas: "Main-Image img img" "Main-Image img img";
 		gap: 16px;
@@ -40,21 +40,20 @@
 		}
 	}
 	#button {
-		display: block;
 		width: 8.1em;
 		line-height: 50px;
-		margin: 57px auto 100px auto; //100px is only there to make it easier to view on codepen
+		margin: 57px auto 0 auto; 
 		a {
 			text-decoration: none;
-			color: #FFFFFF;
 			span {
 				display: block;
 				font-family: 'Inter', sans-serif;
 				font-weight: 550;
 				font-size: 12px;
-				margin: 57px auto 100px auto; //100px is only there to make it easier to view on codepen
 				text-align: center;
+        color: #FFFFFF;
 				background: #AF0000;
+        // border-radius: 15px; //Might use
 			}
 		}
 	}
