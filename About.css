@@ -26,7 +26,7 @@
   margin: var(--ch) 0 0 0;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 2fr;
-  grid-template-areas: "img h2 img h2" "img span img span";
+  grid-template-areas: "img h2 img h2" "img p img p";
   gap: 10px;
 }
 #content #bios .selfie {
@@ -36,14 +36,12 @@
 }
 #content #bios h2 {
   margin: 0;
-  grid-area: "h2";
   font-family: "Inter", sans-serif;
   font-weight: 550;
   font-size: 1.2em;
   height: 1.2em;
 }
 #content #bios .bio {
-  grid-area: "span";
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1em;
