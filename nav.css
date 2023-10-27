@@ -43,9 +43,9 @@
           color: #AF0000;
           background: #FFFFFF; }
         #topnav #topnavcontain #toptext li:not(.active):hover {
-          color: #EDEEF2; }
+          color: #AFAFAF; }
         #topnav #topnavcontain #toptext .active:hover {
-          color: #EDEEF2; }
+          color: #AFAFAF; }
     #topnav #topnavcontain #socials img {
       padding: 13px 0 0 13px;
       width: 16px;
