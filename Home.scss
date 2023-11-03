@@ -5,21 +5,23 @@
 }
 
 #content {
-	display: inline-block;
+	display: flex;
+  flex-direction: column;
 	position: relative;
 	top: var(--ch);
 	// width: calc(100% - var(--hp) * 2); // 100% - Padding * 2
 	padding: var(--vp) var(--hp); // Sets the inset for elements
+  // background: #EDEEF2;
 	h1 {
 		margin: var(--ch) 0 0 0;
 		font-family: 'Inter', sans-serif;
-		font-weight: 550;
+		font-weight: 700;
 		font-size: 46px;
 	}
 	h2 {
 		margin: 0;
 		font-family: 'Inter', sans-serif;
-		font-weight: 550;
+		font-weight: 700;
 		font-size: 24px;
 		color: #AF0000;
 	}
@@ -57,4 +59,8 @@
 			}
 		}
 	}
+}
+
+body {
+	margin: 0;
 }

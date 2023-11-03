@@ -14,7 +14,6 @@
   padding: var(--vp) var(--hp);
   background-color: #AF0000; }
   #topnav #topnavcontain {
-    height: var(--ch);
     display: flex;
     align-items: stretch;
     justify-content: space-between; }
@@ -33,7 +32,7 @@
       line-height: var(--ch); }
       #topnav #topnavcontain #toptext li {
         font-family: 'Inter', sans-serif;
-        font-weight: 550;
+        font-weight: 700;
         font-size: 12px;
         padding: 0 15px;
         color: #FFFFFF;
@@ -44,8 +43,9 @@
           background: #FFFFFF; }
         #topnav #topnavcontain #toptext li:not(.active):hover {
           color: #AFAFAF; }
-        #topnav #topnavcontain #toptext .active:hover {
-          background: #AFAFAF; }
+        #topnav #topnavcontain #toptext li.active:hover {
+          color: #AFAFAF;
+        }
     #topnav #topnavcontain #socials img {
       padding: 13px 0 0 13px;
       width: 16px;
