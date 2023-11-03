@@ -16,7 +16,8 @@
   #topnav #topnavcontain {
     display: flex;
     align-items: stretch;
-    justify-content: space-between; }
+    justify-content: space-between; 
+    height: var(--ch)}
     #topnav #topnavcontain #logo {
       padding: 7px 0 0 0;}
       #topnav #topnavcontain #logo img {
