@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Some more about Jagged Edge and it's members">
+		<title>About</title>
+		<link rel="stylesheet" href="css/About.css">
+		<link rel="icon" type="image/x-icon" href="Images/jetvred.webp">
+	</head>
+	<body onload="navBackAnimate(3)">
+		<!--Navigation bar-->
+			<link rel="stylesheet" href="nav.css">
+			<header id="topnav">
+				<script src="nav.js"></script>
+				<div id="topnavcontain">
+					<div id="logo">
+						<img src="Images/jetv.svg" alt="jetv"/>
+					</div>
+					<ul id="toptext">
+						<li onclick="navAnimate(1).then(() => location.href='/')">HOME</li>
+						<li onclick="navAnimate(2).then(() => location.href='Videos.html')">VIDEOS</li>
+						<li class="active"  onclick="navAnimate(3).then(() => location.href='About.html')">ABOUT</li>
+						<li onclick="navAnimate(4).then(() => location.href='Contacts.html')">CONTACT</li>
+					</ul>
+					<div id="socials">
+						<a href="https://twitter.com/jaggededgevideo">
+							<img src="Images/twitter.svg" alt="twitter"/></a>
+						<a href="https://instagram.com/jaggededgetv">
+							<img src="Images/instagram.svg" alt="insta"/></a>
+						<a href="https://youtube.com/channel/UCq7PExzi6fOEK0DMr7quo0w">
+							<img src="Images/youtube.svg" alt="youtube"/></a>
+					</div>
+				</div>
+			</header>
+		<!--end of Navigation bar-->
+		<main id="content">
+			<h1>JAGGED EDGE <Font color="AF0000">|</Font> 2021 - 2022</h1>
+			<div id="contentbox">
+				<img id="groupimg" src="Images/group.webp">
+				<h1>MEET THE CREW</h1>
+				<div id="bios">
+					<img class="selfie" src="Images/Kurimsky.webp">
+					<div class="biotext">
+					<h2>Mr. Kurimsky <font color="#AF0000">|</font> Advisor</h2>
+					<p class="bio">Mr. Kurimsky is in his 28th year of teaching.  He is a proud Shocker and alum Wichita State University.  Mr. K is involved with Jaguar athletics as the sophomore boys basketball coach.  He has been at West for 12 years and is excited to be working with such great students.</p>
+					</div>
+					<img class="selfie" src="Images/jakey.webp">
+					<div class="biotext">
+					<h2>Jake Barton <font color="#AF0000">|</font> Junior</h2>
+					<p class="bio">Jake Barton is a Junior at Blue Valley West, and he plans on continuing his education at the University of Kansas or elsewhere. Outside of Jagged Edge he's studying visual art and music theory. His favorite band right now is Mr Bungle.</p>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

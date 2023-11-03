@@ -1,0 +1,28 @@
+:root {
+	--vp: 0; // Vertical Padding
+	--hp: 10%; // Horizontal Padding
+	--ch: 42px; // Content Height 42px
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: var(--ch);
+	// width: calc(100% - var(--hp) * 2); // 100% - Padding * 2
+	// padding: var(--vp) var(--hp); // Sets the inset for elements
+	// background: #EDEEF2;
+	font-family: 'Inter', sans-serif;
+  	height: calc(100vh - var(--ch));
+	h1 {
+		margin: 20px auto 20px auto;
+		font-weight: 700;
+		font-size: 32px;
+	}
+
+	#contentbox {
+		background: #EDEEF2;
+		height: 100%;
+		padding: var(--vp) var(--hp);
+	}
+}

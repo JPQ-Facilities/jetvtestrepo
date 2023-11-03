@@ -1,0 +1,26 @@
+:root {
+  --vp: 0;
+  --hp: 10%;
+  --ch: 42px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: var(--ch);
+  font-family: "Inter", sans-serif;
+  height: calc(100vh - var(--ch));
+}
+#content h1 {
+  margin: 20px auto 20px auto;
+  font-weight: 700;
+  font-size: 32px;
+}
+#content #contentbox {
+  background: #EDEEF2;
+  height: 100%;
+  padding: var(--vp) var(--hp);
+}
+
+/*# sourceMappingURL=Videos.css.map */

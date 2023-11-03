@@ -1,0 +1,56 @@
+:root {
+  --vp: 0;
+  --hp: 10%;
+  --ch: 42px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: var(--ch);
+  font-family: "Inter", sans-serif;
+}
+#content h1 {
+  margin: 20px auto 20px auto;
+  font-weight: 700;
+  font-size: 32px;
+}
+#content #contentbox {
+  background: #EDEEF2;
+  height: 100%;
+  padding: var(--vp) var(--hp);
+}
+#content #contentbox #groupimg {
+  margin: 60px 0 0 0;
+  width: 100%;
+  height: 400px;
+}
+#content #contentbox #bios {
+  margin: 60px 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  gap: 10px;
+}
+#content #contentbox #bios .selfie {
+  width: 100%;
+  object-fit: contain;
+}
+#content #contentbox #bios h2 {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 550;
+  font-size: 1.2em;
+}
+#content #contentbox #bios .bio {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin-top: 0.3em;
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=About.css.map */
