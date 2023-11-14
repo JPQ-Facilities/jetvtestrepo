@@ -23,4 +23,8 @@
   padding: var(--vp) var(--hp);
 }
 
+body {
+  margin: 0;
+}
+
 /*# sourceMappingURL=Videos.css.map */

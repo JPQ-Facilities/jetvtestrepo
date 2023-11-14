@@ -21,13 +21,44 @@
   height: 100%;
   padding: var(--vp) var(--hp);
 }
-#content #contentbox #groupimg {
-  margin: 60px 0 0 0;
-  width: 100%;
+#content #contentbox #staffbio {
+  margin: 20px auto;
+  display: flex;
+  width: 960px;
+  height: 400px;
+  background: #FFFFFF;
+}
+#content #contentbox #staffbio #groupimg {
+  width: 50%;
   height: 400px;
 }
+#content #contentbox #staffbio #stafftext h2 {
+  margin: 10px auto auto 30px;
+  font-weight: 600;
+  font-size: 22px;
+}
+#content #contentbox #staffbio #stafftext #staffspacer {
+  margin: 10px 20px;
+  height: 3px;
+  width: calc(100% - 40px);
+  background: #D9D9D9;
+}
+#content #contentbox #staffbio #stafftext #bio p {
+  margin: auto 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+#content #contentbox #spacer {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 79px;
+  background: #FFFFFF;
+  text-align: center;
+}
 #content #contentbox #bios {
-  margin: 60px 0;
+  margin: 119px auto 20px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 2fr;
   gap: 10px;
